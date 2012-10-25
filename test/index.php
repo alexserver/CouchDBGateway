@@ -1,11 +1,17 @@
-CouchDBGateway
-==============
+<?php
 
-A handy gateway for CouchDB written in php
 
-==============
-
-Usage:
+/*
+ *	CouchDBGateway
+ *	==============
+ *	A handy gateway for CouchDB written in php
+ *	==============
+ *	Usage:
+ */
+$path = dirname(__FILE__).'/lib';
+require($path.'/CouchDBConnection.php');
+require($path.'/CouchDBRequest.php');
+require($path.'/CouchDBResponse.php');
 
 //first we need to set the connection configuration array
 $config = array(
